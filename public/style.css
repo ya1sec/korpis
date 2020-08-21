@@ -1,0 +1,191 @@
+body {
+  padding: 20px;
+  font-family: Consolas, monaco, monospace;
+  font-weight: lighter;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+/* nav {
+  position: fixed;
+} */
+
+.inferi {
+  font-family: inferi;
+}
+
+.elegans {
+  font-family: Oroban Elegans;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.left-btn {
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  margin-top: -50px;
+  margin-left: -100px;
+  padding: 15px;
+}
+
+.right-btn {
+  position: fixed;
+  top: 50%;
+  right: 15%;
+  margin-top: -50px;
+  margin-right: -100px;
+  padding: 15px;
+}
+
+.input-div {
+  position: fixed;
+  top: 60%;
+  margin-top: -50px;
+  font-family: Consolas, monaco, monospace;
+}
+
+.input-box {
+  height: 400px;
+  width: 80%;
+  font-family: Consolas, monaco, monospace;
+  font-size: 0.8em;
+}
+
+.output {
+  justify-content: flex-start;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+}
+
+.info-box {
+  justify-content: flex-start;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 0.8em;
+  font-family: Oroban Elegans;
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+#container-div {
+  height: 600px;
+  width: 100%;
+  overflow: auto;
+  margin-right: 14px;
+  padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+}
+.scrollbar {
+  margin-left: 40px;
+
+  /* float: left; */
+  /* height: 300px; */
+  /* width: 65px; */
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.gen-box {
+  justify-content: flex-start;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: auto;
+  padding: 10px;
+  align-content: center;
+  justify-content: flex-center;
+}
+
+.text {
+  font-size: 0.85em;
+}
+
+.btn {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  padding: 20px;
+  left: 0;
+  bottom: 0 !important;
+  height: 80px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* .gen {
+  justify-content: flex-end;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 40%;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 0.85em;
+} */
+
+.spin {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes depth {
+  0 {
+    text-shadow: 0 0 black;
+  }
+
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+
+  50% {
+    text-shadow: 0 0 black;
+  }
+
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+      -5px 0 black;
+  }
+
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .output {
+    width: 80%;
+  }
+}
