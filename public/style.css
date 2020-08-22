@@ -5,7 +5,7 @@ body {
   background-color: #000000;
   color: rgb(255, 255, 255);
   overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   height: 80vh;
 }
 
@@ -102,14 +102,14 @@ body {
   position: fixed;
   top: 65%;
   margin-top: -50px;
-  font-family: Consolas, monaco, monospace;
+  font-family: JetBrains Mono;
 }
 
 .input-div {
   position: fixed;
   bottom: 0%;
   margin-top: -300px;
-  font-family: Consolas, monaco, monospace;
+  font-family: JetBrains Mono, monospace;
   /* position: static; */
   /* height: 20em;
   width: 100%; */
@@ -129,7 +129,7 @@ body {
 .input-box {
   height: 15em;
   width: 80%;
-  font-family: Consolas, monaco, monospace;
+  font-family: JetBrains Mono;
   font-size: 0.8em;
 }
 
@@ -278,6 +278,27 @@ footer {
     width: 80%;
     font-size: 0.7em;
   }
+
+  body {
+    padding: 20px;
+    font-family: JetBrains Mono, monaco, monospace;
+    font-weight: lighter;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 80vh;
+  }
+
+  .scrollbar {
+    margin-left: auto;
+
+    /* float: left; */
+    /* height: 300px; */
+    /* width: 65px; */
+    overflow-y: auto;
+    margin-bottom: auto;
+  }
 }
 @media only screen and (max-height: 600px) {
   .output {
@@ -315,6 +336,45 @@ footer {
 
   .smalltext {
     font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .input-box {
+    height: 10em;
+  }
+
+  #container-div {
+    margin-top: -15px;
+    position: static;
+    height: 24em;
+    width: 100%;
+    overflow: auto;
+    margin-left: 14px;
+    padding-left: 28px;
+    margin-right: 14px;
+    padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+    padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+  }
+
+  .input-div {
+    position: sticky;
+    bottom: 0%;
+    margin-top: -10px;
+    font-family: JetBrains Mono;
+    /* position: static; */
+    /* height: 20em;
+  width: 100%; */
+    overflow: auto;
+    margin-right: 14px;
+    padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+    padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
   }
 }
 

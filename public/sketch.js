@@ -44,7 +44,7 @@ function setup() {
     "gen f3 no-underline white bg-animate hover-yellow inline-flex items-center pa3 bb--dashed ml4"
   );
   button4 = createA("#", "Ϡ").addClass(
-    "gen f3 no-underline white bg-animate hover-red inline-flex items-center pa3 bb--dashed ml4"
+    "gen f3 no-underline white bg-animate hover-red inline-flex items-center pa3 bb--dashed ml4 mr4"
   );
   button.parent("left-container");
   button2.parent("left-container");
