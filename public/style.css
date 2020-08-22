@@ -4,7 +4,12 @@ body {
   font-weight: lighter;
   background-color: #000000;
   color: rgb(255, 255, 255);
-  overflow: hidden;
+  overflow-x: hidden;
+  height: 80vh;
+}
+
+.info-div {
+  width: 60%;
 }
 /* nav {
   position: fixed;
@@ -43,13 +48,6 @@ body {
   padding: 15px;
 }
 
-.input-div {
-  position: fixed;
-  top: 57%;
-  margin-top: -50px;
-  font-family: Consolas, monaco, monospace;
-}
-
 .footer {
   position: fixed;
   top: 65%;
@@ -57,8 +55,29 @@ body {
   font-family: Consolas, monaco, monospace;
 }
 
+.input-div {
+  position: fixed;
+  bottom: 0%;
+  margin-top: -300px;
+  font-family: Consolas, monaco, monospace;
+  /* position: static; */
+  /* height: 20em;
+  width: 100%; */
+  overflow: auto;
+  margin-right: 14px;
+  padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+}
+
+.korpis {
+  position: fixed;
+}
+
 .input-box {
-  height: 400px;
+  height: 15em;
   width: 80%;
   font-family: Consolas, monaco, monospace;
   font-size: 0.8em;
@@ -71,6 +90,10 @@ body {
   padding: 10px;
   color: rgb(255, 255, 255);
   font-size: 0.8em;
+}
+
+.smalltext {
+  font-size: 0.7em;
 }
 
 .info-box {
@@ -89,7 +112,9 @@ body {
 }
 
 #container-div {
-  height: 600px;
+  margin-top: -15px;
+  position: static;
+  height: 26em;
   width: 100%;
   overflow: auto;
   margin-right: 14px;
@@ -200,5 +225,21 @@ footer {
 @media only screen and (max-width: 40em) {
   .output {
     width: 80%;
+    font-size: 0.7em;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .output {
+    width: 60%;
+    font-size: 0.7em;
+  }
+
+  .input-box {
+    min-height: 10em;
+    max-height: 15em;
+  }
+
+  .input-div {
+    top: 60%;
   }
 }

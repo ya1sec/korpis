@@ -34,7 +34,7 @@ function preload() {
 function setup() {
   noCanvas();
   // input = createInput("It was a dark and stormy night.");
-  button = createA("#", "Θ)").addClass(
+  button = createA("#", "Θ").addClass(
     "gen f3 no-underline white bg-animate hover-pink inline-flex items-center pa3 bb--dashed  ml4"
   );
   button2 = createA("#", "ȣ").addClass(
