@@ -10,6 +10,10 @@ body {
   position: fixed;
 } */
 
+.hide {
+  display: none;
+}
+
 .inferi {
   font-family: inferi;
 }
@@ -41,7 +45,14 @@ body {
 
 .input-div {
   position: fixed;
-  top: 60%;
+  top: 57%;
+  margin-top: -50px;
+  font-family: Consolas, monaco, monospace;
+}
+
+.footer {
+  position: fixed;
+  top: 65%;
   margin-top: -50px;
   font-family: Consolas, monaco, monospace;
 }
@@ -65,12 +76,14 @@ body {
 .info-box {
   justify-content: flex-start;
   margin: auto;
-  width: 60%;
+  width: 80%;
   padding: 10px;
   color: rgb(255, 255, 255);
-  font-size: 0.8em;
-  font-family: Oroban Elegans;
-  font-weight: normal;
+}
+.nhg {
+  font-size: 2em;
+  font-family: NeueHaasGroteskDisp Pro Md;
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
