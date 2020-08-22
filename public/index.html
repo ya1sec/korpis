@@ -17,6 +17,7 @@
       class="justify-center hover-hot-pink center white korpis dtc dib link hover-hot-pink"
       href="#"
       title=""
+      onclick="showInfo()"
     >
       <svg
         width="3em"
@@ -107,7 +108,7 @@
  -->
     <!--  -->
     <div id="container-div" class="scrollbar">
-      <div class="info-div center pa4">
+      <div class="info-div center pa4 hide">
         <div class="overflow-hidden">
           <table class="f6 w-50 mw8 center" cellspacing="0">
             <thead>
@@ -117,6 +118,7 @@
                     id="exit"
                     class="exit gen hot-pink f6 no-underline bb-dashed bg-animate hover-blue"
                     href="#"
+                    onclick="hideInfo()"
                   >
                     x
                   </a>
@@ -162,35 +164,34 @@
                 <td class="bb b--white-20 tl pb3 smalltext pr3">
                   KORPIS is a tool for writing poetry. Clicking the icons below
                   renders a block of text generated from a markov model trained
-                  by different set of corpora. Take words, sentences, or
-                  paragraphs from the results and write your own poetry in the
-                  text box.
+                  by different corpora. Take words, sentences, or paragraphs
+                  from the results and write your own poetry in the text box.
                 </td>
               </tr>
             </thead>
             <tbody class="lh-copy">
               <tr>
                 <td class="f5 bb b--white-20 tl pb3 smalltext pr3">Θ</td>
-                <td class="bb b--white-20 tl pb3 smalltext pr3">
-                  * CORPORA JUICE *
+                <td class="ttu tracked bb b--white-20 tl pb3 smalltext pr3">
+                  FULL CORPUS
                 </td>
               </tr>
               <tr>
                 <td class="f5 bb b--white-20 tl pb3 smalltext pr3">ȣ</td>
-                <td class="bb b--white-20 tl pb3 smalltext pr3">
+                <td class="ttu tracked bb b--white-20 tl pb3 smalltext pr3">
                   Macbeth + Finnegan's Wake + Metamorphosis + bon bon il est un
                   pays
                 </td>
               </tr>
               <tr>
                 <td class="f5 bb b--white-20 tl pb3 smalltext pr3">♅</td>
-                <td class="bb b--white-20 tl pb3 smalltext pr3">
+                <td class="ttu tracked bb b--white-20 tl pb3 smalltext pr3">
                   Tractatus + Purgatorio + 1st Men in the Moon
                 </td>
               </tr>
               <tr>
                 <td class="f5 bb b--white-20 tl pb3 smalltext pr3">Ϡ</td>
-                <td class="bb b--white-20 tl pb3 smalltext pr3">
+                <td class="ttu tracked bb b--white-20 tl pb3 smalltext pr3">
                   Manifesto of Surrealism + Leaves of Grass + Tractatus
                 </td>
               </tr>
@@ -223,7 +224,7 @@
     <!--  -->
     <script src="./libraries/p5.js" type="text/javascript"></script>
     <script src="./libraries/rita-full.js" type="text/javascript"></script>
-
     <script src="sketch.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </body>
 </html>

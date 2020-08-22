@@ -1,10 +1,11 @@
 body {
   padding: 20px;
-  font-family: Consolas, monaco, monospace;
+  font-family: JetBrains Mono, monaco, monospace;
   font-weight: lighter;
   background-color: #000000;
   color: rgb(255, 255, 255);
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 80vh;
 }
 
@@ -96,13 +97,13 @@ body {
   font-size: 0.7em;
 }
 
-.info-box {
+/* .info-box {
   justify-content: flex-start;
   margin: auto;
   width: 80%;
   padding: 10px;
   color: rgb(255, 255, 255);
-}
+} */
 .nhg {
   font-size: 2em;
   font-family: NeueHaasGroteskDisp Pro Md;
@@ -228,7 +229,7 @@ footer {
     font-size: 0.7em;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-height: 600px) {
   .output {
     width: 60%;
     font-size: 0.7em;
@@ -241,5 +242,28 @@ footer {
 
   .input-div {
     top: 60%;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .output {
+    width: 60%;
+    font-size: 0.8em;
+  }
+
+  .input-box {
+    height: 30em;
+  }
+
+  #container-div {
+    height: 45em;
+  }
+
+  .input-div {
+    top: 60%;
+  }
+
+  .smalltext {
+    font-size: 0.8em;
   }
 }

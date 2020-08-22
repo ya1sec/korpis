@@ -182,3 +182,13 @@ function generateComboFour() {
 //   lines = markov.generateSentences(10);
 //   drawText();
 // }
+
+function showInfo() {
+  $(".info-div").removeClass("hide");
+  $(".output").addClass("hide");
+}
+
+function hideInfo() {
+  $(".info-div").addClass("hide");
+  $(".output").removeClass("hide");
+}
