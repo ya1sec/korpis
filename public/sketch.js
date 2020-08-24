@@ -34,22 +34,34 @@ function preload() {
 function setup() {
   noCanvas();
   // input = createInput("It was a dark and stormy night.");
+  // button = createA("#", "Θ").addClass(
+  //   "gen f3 no-underline white bg-animate hover-pink inline-flex items-center pa3 bb--dashed  ml4"
+  // );
+  // button2 = createA("#", "ȣ").addClass(
+  //   "gen f3 no-underline white bg-animate hover-green inline-flex items-center pa3 bb--dashed  ml4"
+  // );
+  // button3 = createA("#", "♅").addClass(
+  //   "gen f3 no-underline white bg-animate hover-yellow inline-flex items-center pa3 bb--dashed ml4"
+  // );
+  // button4 = createA("#", "Ϡ").addClass(
+  //   "gen f3 no-underline white bg-animate hover-red inline-flex items-center pa3 bb--dashed ml4 mr4"
+  // );
   button = createA("#", "Θ").addClass(
-    "gen f3 no-underline white bg-animate hover-pink inline-flex items-center pa3 bb--dashed  ml4"
+    "f3 db no-underline bg-animate white link hover-pink"
   );
   button2 = createA("#", "ȣ").addClass(
-    "gen f3 no-underline white bg-animate hover-green inline-flex items-center pa3 bb--dashed  ml4"
+    "f3 db no-underline bg-animate white link hover-green"
   );
   button3 = createA("#", "♅").addClass(
-    "gen f3 no-underline white bg-animate hover-yellow inline-flex items-center pa3 bb--dashed ml4"
+    "f3 db no-underline bg-animate white link hover-yellow"
   );
   button4 = createA("#", "Ϡ").addClass(
-    "gen f3 no-underline white bg-animate hover-red inline-flex items-center pa3 bb--dashed ml4 mr4"
+    "f3 db no-underline bg-animate white link hover-red"
   );
-  button.parent("left-container");
-  button2.parent("left-container");
-  button3.parent("right-container");
-  button4.parent("right-container");
+  button.parent("sidebar-logos");
+  button2.parent("sidebar-logos");
+  button3.parent("sidebar-logos");
+  button4.parent("sidebar-logos");
   // button = select("#button");
   // input.changed(generateComboOne);
   button.mousePressed(generateComboOne);
@@ -185,10 +197,10 @@ function generateComboFour() {
 
 function showInfo() {
   $(".info-div").removeClass("hide");
-  $(".output").addClass("hide");
+  // $(".output").addClass("hide");
 }
 
 function hideInfo() {
   $(".info-div").addClass("hide");
-  $(".output").removeClass("hide");
+  // $(".output").removeClass("hide");
 }

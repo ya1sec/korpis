@@ -108,18 +108,18 @@ body {
 .input-div {
   position: fixed;
   bottom: 0%;
-  margin-top: -300px;
+  margin-top: -80%;
   font-family: JetBrains Mono, monospace;
   /* position: static; */
   /* height: 20em;
   width: 100%; */
-  overflow: auto;
+  /* overflow: auto;
   margin-right: 14px;
   padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
   padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
   -ms-overflow-style: none;
 
-  scrollbar-width: none;
+  scrollbar-width: none; */
 }
 
 .korpis {
@@ -127,8 +127,8 @@ body {
 }
 
 .input-box {
-  height: 15em;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   font-family: JetBrains Mono;
   font-size: 0.8em;
 }
@@ -273,10 +273,34 @@ footer {
   }
 }
 
+.link {
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+.link:link,
+.link:visited {
+  transition: color 0.15s ease-in;
+}
+
+.link:hover {
+  transition: color 0.15s ease-in;
+}
+
+.link:active {
+  transition: color 0.15s ease-in;
+}
+
+.link:focus {
+  transition: color 0.15s ease-in;
+  outline: transparent;
+}
+
 @media only screen and (max-width: 40em) {
   .output {
-    width: 80%;
+    /* width: 80%; */
     font-size: 0.7em;
+    font-weight: lighter;
   }
 
   body {
