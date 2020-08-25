@@ -113,6 +113,10 @@ function generateComboTwo() {
     "output bg-animate hover-bg-green hover-black"
   );
   p.parent("container-div");
+  var deleteBtn = createA("#", "x").addClass(
+    "f6 db no-underline bg-animate red link hover-red"
+  );
+  deleteBtn.parent(p);
   // button = createButton("?").addClass("gen");
   // button.mousePressed(generateComboOne);
 }
