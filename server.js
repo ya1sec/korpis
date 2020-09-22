@@ -19,6 +19,9 @@ app.use(express.static("public"));
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "index.html"));
 });
+app.get("/haiku", function (req, res) {
+  res.sendFile(path.join(__dirname, "index2.html"));
+});
 
 app.listen(PORT, () => {
   console.log(`App running on http://localhost:3000/`);
