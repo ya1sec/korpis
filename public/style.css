@@ -374,7 +374,7 @@ footer {
 
 @media only screen and (max-height: 800px) {
   .input-box {
-    height: 10em;
+    height: 12em;
   }
 
   body {
