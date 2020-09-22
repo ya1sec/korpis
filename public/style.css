@@ -368,26 +368,36 @@ footer {
     height: 10em;
   }
 
-  #container-div {
-    margin-top: -15px;
-    position: static;
-    height: 24em;
-    width: 100%;
-    overflow: auto;
-    margin-left: 14px;
-    padding-left: 28px;
-    margin-right: 14px;
-    padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
-    padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
-    -ms-overflow-style: none;
+  body {
+  padding: 20px;
+  font-family: JetBrains Mono, monaco, monospace;
+  font-weight: lighter;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  height: 100%;
+}
 
-    scrollbar-width: none;
-  }
+
+  #container-div {
+  margin-top: -15px;
+  position: static;
+  height: 550px;
+  width: 100%;
+  overflow: auto;
+  margin-right: 14px;
+  padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+  -ms-overflow-style: none;
+
+  scrollbar-width: none;
+}
 
   .input-div {
     position: sticky;
     bottom: 0%;
-    margin-top: -10px;
+    margin-bottom: -1000px;
     font-family: JetBrains Mono;
     /* position: static; */
     /* height: 20em;
@@ -400,6 +410,7 @@ footer {
 
     scrollbar-width: none;
   }
-}
+   } 
+
 
 /*  */
