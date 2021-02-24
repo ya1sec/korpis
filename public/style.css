@@ -1,20 +1,14 @@
 body {
-  padding: 20px;
+  padding: 10px;
   font-family: Hack, monaco, monospace;
   font-weight: lighter;
   background-color: #000000;
   color: rgb(255, 255, 255);
   overflow-x: hidden;
   /* overflow-y: hidden; */
-  height: 100vh;
-  padding-bottom: 20em;
+  height: 90vh;
+  margin-bottom: 20em;
 }
-
-/* NOTE  EYE */
-
-
-
-
 
 /* NOTE  EYE */
 
@@ -130,7 +124,8 @@ body {
   /* overflow: auto;
   margin-right: 14px;
   padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
-  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
+  padding-bottom: 15px; 
+  /*This would hide the scroll bar of the bottom if there is one*/
   -ms-overflow-style: none;
 
   scrollbar-width: none; */
@@ -446,10 +441,10 @@ a {
 .scene {
   width: 100px;
   height: 100px;
-  margin: 2% auto;
+  /* margin: 2% auto; */
   perspective: 1000px;
-  position: fixed;
-  margin-left: 85%;
+  /* position: fixed; */
+  /* margin-left: 85%; */
 }
 .wrapper {
   width: 100%;
