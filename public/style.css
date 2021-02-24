@@ -1,12 +1,13 @@
 body {
   padding: 20px;
-  font-family: JetBrains Mono, monaco, monospace;
+  font-family: Hack, monaco, monospace;
   font-weight: lighter;
   background-color: #000000;
   color: rgb(255, 255, 255);
   overflow-x: hidden;
   /* overflow-y: hidden; */
-  height: 80vh;
+  height: 100vh;
+  padding-bottom: 20em;
 }
 
 /* NOTE  EYE */
@@ -109,9 +110,13 @@ body {
 
 .footer {
   position: fixed;
-  top: 65%;
-  margin-top: -50px;
-  font-family: JetBrains Mono;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 5rem;
+  padding: 1rem;
+  background-color: transparent;
+  text-align: center;
 }
 
 .input-div {
@@ -151,6 +156,7 @@ body {
   font-size: 0.8em;
 }
 
+
 .smalltext {
   font-size: 0.7em;
 }
@@ -171,28 +177,28 @@ body {
 }
 
 #container-div {
-  margin-top: -15px;
+  /* margin-top: -15px; */
   position: static;
-  height: 26em;
+  /* height: 26em; */
   width: 100%;
-  overflow: auto;
-  margin-right: 14px;
-  padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
-  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
-  -ms-overflow-style: none;
+  margin-bottom: 5rem;
+  height: 70vh;
+  /* overflow: auto; */
+  /* margin-right: 14px;
+  padding-right: 28px;  */
+  /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
+  /*This would hide the scroll bar of the bottom if there is one*/
+  /* -ms-overflow-style: none; */
 
-  scrollbar-width: none;
+  /* scrollbar-width: none; */
 }
 
-.scrollbar {
+/* .scrollbar {
   margin-left: 40px;
 
-  /* float: left; */
-  /* height: 300px; */
-  /* width: 65px; */
   overflow-y: scroll;
   margin-bottom: 25px;
-}
+} */
 
 .gen-box {
   justify-content: flex-start;
@@ -221,16 +227,15 @@ body {
   border: none;
 }
 
-footer {
+/* footer {
   display: flex;
   position: absolute;
   padding: 20px;
   left: 0;
   bottom: 0 !important;
-  height: 80px;
   width: 100%;
   overflow: hidden;
-}
+} */
 
 /* .gen {
   justify-content: flex-end;
@@ -247,6 +252,10 @@ footer {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 5s;
+}
+
+a {
+  text-decoration: none;
 }
 
 @keyframes spin {
@@ -320,7 +329,7 @@ footer {
     color: rgb(255, 255, 255);
     overflow-x: auto;
     overflow-y: auto;
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .scrollbar {

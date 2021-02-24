@@ -18,6 +18,9 @@ var lines,
   x = 160,
   y = 240;
 
+var res = document.getElementsByClassName("output");
+res.contentEditable = true;
+
 function preload() {
   macbeth = loadStrings("./data/shakespeare-macbeth.txt");
   finnegan = loadStrings("./data/fw.txt");
@@ -27,7 +30,7 @@ function preload() {
   wittgenstein = loadStrings("./data/wittgenstein.txt");
   dante = loadStrings("./data/dante.txt");
   wells = loadStrings("./data/wells.txt");
-  beckett = loadStrings("./data/bonbon.txt");
+  beckett = loadStrings("./data/threenovels.txt");
   surrealism = loadStrings("./data/surrealism.txt");
 }
 
@@ -46,28 +49,29 @@ function setup() {
   // button4 = createA("#", "Ϡ").addClass(
   //   "gen f3 no-underline white bg-animate hover-red inline-flex items-center pa3 bb--dashed ml4 mr4"
   // );
-  button = createA("#", "Θ").addClass(
-    "f3 db no-underline bg-animate white link hover-pink"
-  );
-  button2 = createA("#", "ȣ").addClass(
-    "f3 db no-underline bg-animate white link hover-green"
-  );
-  button3 = createA("#", "♅").addClass(
-    "f3 db no-underline bg-animate white link hover-yellow"
-  );
-  button4 = createA("#", "Ϡ").addClass(
-    "f3 db no-underline bg-animate white link hover-red"
-  );
-  button.parent("sidebar-logos");
-  button2.parent("sidebar-logos");
-  button3.parent("sidebar-logos");
-  button4.parent("sidebar-logos");
-  // button = select("#button");
-  // input.changed(generateComboOne);
-  button.mousePressed(generateComboOne);
-  button2.mousePressed(generateComboTwo);
-  button3.mousePressed(generateComboThree);
-  button4.mousePressed(generateComboFour);
+
+  // button = createA("#", "Θ").addClass(
+  //   "f3 db no-underline bg-animate white link hover-pink"
+  // );
+  // button2 = createA("#", "ȣ").addClass(
+  //   "f3 db no-underline bg-animate white link hover-green"
+  // );
+  // button3 = createA("#", "♅").addClass(
+  //   "f3 db no-underline bg-animate white link hover-yellow"
+  // );
+  // button4 = createA("#", "Ϡ").addClass(
+  //   "f3 db no-underline bg-animate white link hover-red"
+  // );
+  // button.parent("sidebar-logos");
+  // button2.parent("sidebar-logos");
+  // button3.parent("sidebar-logos");
+  // button4.parent("sidebar-logos");
+  // // button = select("#button");
+  // // input.changed(generateComboOne);
+  // button.mousePressed(generateComboOne);
+  // button2.mousePressed(generateComboTwo);
+  // button3.mousePressed(generateComboThree);
+  // button4.mousePressed(generateComboFour);
   // input.size(300);
 }
 
@@ -89,12 +93,18 @@ function generateComboOne() {
   markov.loadText(chesterton.join(" "));
   markov.loadText(surrealism.join(" "));
   var output = markov.generateSentences(10);
-  var p = createP(">>> " + output).addClass(
-    "output bg-animate hover-bg-pink hover-black"
+  console.log(output);
+  var l = createP("Θ ").addClass(
+    "output bg-animate hover-bg-pink pink hover-black"
   );
-  p.parent("container-div");
-  // button = createButton("?").addClass("gen");
-  // button.mousePressed(generateComboOne);
+  for (i = 0; i < output.length; i++) {
+    var p = createP(output[i]).addClass(
+      "bg-animate hover-bg-pink white hover-black generated-text"
+    );
+    p.attribute("contenteditable", true);
+    l.parent("container-div");
+    p.parent(l);
+  }
 }
 
 function generateComboTwo() {
@@ -109,10 +119,17 @@ function generateComboTwo() {
   larkov.loadText(kafka.join(" "));
   larkov.loadText(beckett.join(" "));
   var output = larkov.generateSentences(10);
-  var p = createP(">>> " + output).addClass(
-    "output bg-animate hover-bg-green hover-black"
+  var l = createP("ȣ ").addClass(
+    "output bg-animate hover-bg-green green hover-black"
   );
-  p.parent("container-div");
+  for (i = 0; i < output.length; i++) {
+    var p = createP(output[i]).addClass(
+      "bg-animate hover-bg-green white hover-black generated-text"
+    );
+    p.attribute("contenteditable", true);
+    l.parent("container-div");
+    p.parent(l);
+  }
   // NOTE delete button
   // var deleteBtn = createA("#", "x").addClass(
   //   "f6 db no-underline bg-animate red link hover-red"
@@ -133,10 +150,17 @@ function generateComboThree() {
   tarkov.loadText(dante.join(" "));
   tarkov.loadText(wells.join(" "));
   var output = tarkov.generateSentences(10);
-  var p = createP(">>> " + output).addClass(
-    "output bg-animate hover-bg-yellow hover-black"
+  var l = createP("♅ ").addClass(
+    "output bg-animate hover-bg-yellow yellow hover-black"
   );
-  p.parent("container-div");
+  for (i = 0; i < output.length; i++) {
+    var p = createP(output[i]).addClass(
+      "bg-animate hover-bg-yellow white hover-black generated-text"
+    );
+    p.attribute("contenteditable", true);
+    l.parent("container-div");
+    p.parent(l);
+  }
   // button = createButton("?").addClass("gen");
   // button.mousePressed(generateComboOne);
 }
@@ -152,10 +176,17 @@ function generateComboFour() {
   sarkov.loadText(whitman.join(" "));
   sarkov.loadText(wittgenstein.join(" "));
   var output = sarkov.generateSentences(10);
-  var p = createP(">>> " + output).addClass(
-    "output bg-animate hover-bg-red hover-black"
+  var l = createP("Ϡ ").addClass(
+    "output bg-animate hover-bg-red red hover-black"
   );
-  p.parent("container-div");
+  for (i = 0; i < output.length; i++) {
+    var p = createP(output[i]).addClass(
+      "bg-animate hover-bg-red white hover-black generated-text"
+    );
+    p.attribute("contenteditable", true);
+    l.parent("container-div");
+    p.parent(l);
+  }
   // button = createButton("?").addClass("gen");
   // button.mousePressed(generateComboOne);
 }
