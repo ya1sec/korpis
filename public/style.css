@@ -10,6 +10,14 @@ body {
   margin-bottom: 20em;
 }
 
+p {
+  outline: none;
+}
+
+a {
+  outline: none;
+}
+
 /* NOTE  EYE */
 
 
