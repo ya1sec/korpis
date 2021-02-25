@@ -20,6 +20,11 @@ a {
 
 /* NOTE  EYE */
 
+.bg-button {
+  background-color: rgba(32, 32, 32, 0.55);
+  backdrop-filter: blur(2px);
+}
+
 
 .marble {
   width: 3em;
@@ -42,7 +47,8 @@ a {
 }
 
 .info-div {
-  width: 60%;
+  /* width: 60%; */
+  max-width: 70%;
 }
 .korpis {
   position: relative;
@@ -153,7 +159,8 @@ a {
 .output {
   justify-content: flex-start;
   margin: auto;
-  width: 40%;
+  max-width: 70%;
+  /* width: 40%; */
   padding: 10px;
   color: rgb(255, 255, 255);
   font-size: 0.8em;
@@ -172,7 +179,6 @@ a {
   color: rgb(255, 255, 255);
 } */
 .nhg {
-  font-size: 2em;
   font-family: NeueHaasGroteskDisp Pro Md;
   font-weight: 500;
   font-style: normal;
@@ -185,7 +191,7 @@ a {
   /* height: 26em; */
   width: 100%;
   margin-bottom: 5rem;
-  height: 70vh;
+  /* height: 70vh; */
   /* overflow: auto; */
   /* margin-right: 14px;
   padding-right: 28px;  */
@@ -330,8 +336,8 @@ a {
     font-weight: lighter;
     background-color: #000000;
     color: rgb(255, 255, 255);
-    overflow-x: auto;
-    overflow-y: auto;
+    /* overflow-x: auto;
+    overflow-y: auto; */
     /* height: 80vh; */
   }
 
@@ -347,7 +353,7 @@ a {
 }
 @media only screen and (max-height: 600px) {
   .output {
-    width: 60%;
+    /* width: 60%; */
     font-size: 0.7em;
   }
 
@@ -363,7 +369,7 @@ a {
 
 @media only screen and (min-width: 400px) {
   .output {
-    width: 60%;
+    /* width: 60%; */
     font-size: 0.8em;
   }
 
@@ -372,7 +378,7 @@ a {
   }
 
   #container-div {
-    height: 45em;
+    /* height: 45em; */
   }
 
   .input-div {
@@ -406,13 +412,6 @@ a {
   position: static;
   height: 550px;
   width: 100%;
-  overflow: auto;
-  margin-right: 14px;
-  padding-right: 28px; /*This would hide the scroll bar of the right. To be sure we hide the scrollbar on every browser, increase this value*/
-  padding-bottom: 15px; /*This would hide the scroll bar of the bottom if there is one*/
-  -ms-overflow-style: none;
-
-  scrollbar-width: none;
 }
 
   .input-div {

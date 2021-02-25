@@ -95,15 +95,17 @@ function generateComboOne() {
   var output = markov.generateSentences(10);
   console.log(output);
   var l = createP("Θ ").addClass(
-    "output bg-animate hover-bg-pink pink hover-black"
+    "output bg-animate hover-bg-pink hover-black f3"
   );
   for (i = 0; i < output.length; i++) {
     var p = createP(output[i]).addClass(
-      "bg-animate hover-bg-pink white hover-black generated-text"
+      "bg-animate hover-black generated-text inferi"
     );
     p.attribute("contenteditable", true);
     l.parent("container-div");
     p.parent(l);
+    var objDiv = document.getElementById("container-div");
+    objDiv.scrollTop = objDiv.scrollHeight;
   }
 }
 
@@ -120,11 +122,11 @@ function generateComboTwo() {
   larkov.loadText(beckett.join(" "));
   var output = larkov.generateSentences(10);
   var l = createP("ȣ ").addClass(
-    "output bg-animate hover-bg-green green hover-black"
+    "output bg-animate hover-bg-green hover-black f3 "
   );
   for (i = 0; i < output.length; i++) {
     var p = createP(output[i]).addClass(
-      "bg-animate hover-bg-green white hover-black generated-text"
+      "bg-animate hover-black generated-text inferi"
     );
     p.attribute("contenteditable", true);
     l.parent("container-div");
@@ -151,11 +153,11 @@ function generateComboThree() {
   tarkov.loadText(wells.join(" "));
   var output = tarkov.generateSentences(10);
   var l = createP("♅ ").addClass(
-    "output bg-animate hover-bg-yellow yellow hover-black"
+    "output bg-animate hover-bg-yellow hover-black f3 "
   );
   for (i = 0; i < output.length; i++) {
     var p = createP(output[i]).addClass(
-      "bg-animate hover-bg-yellow white hover-black generated-text"
+      "bg-animate hover-black generated-text inferi"
     );
     p.attribute("contenteditable", true);
     l.parent("container-div");
@@ -177,11 +179,11 @@ function generateComboFour() {
   sarkov.loadText(wittgenstein.join(" "));
   var output = sarkov.generateSentences(10);
   var l = createP("Ϡ ").addClass(
-    "output bg-animate hover-bg-red red hover-black"
+    "output bg-animate hover-bg-red hover-black f3 "
   );
   for (i = 0; i < output.length; i++) {
     var p = createP(output[i]).addClass(
-      "bg-animate hover-bg-red white hover-black generated-text"
+      "bg-animate hover-black generated-text inferi"
     );
     p.attribute("contenteditable", true);
     l.parent("container-div");
